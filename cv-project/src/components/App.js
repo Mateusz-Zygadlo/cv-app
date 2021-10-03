@@ -13,12 +13,21 @@ class App extends React.Component{
             lastNameInput: '',
             numberInput: '',
             emailInput: '',
+            schoolNameInput: '',
+            titleOfStudyInput: '',
+            degreeInput: '',
+            cityInput: '',
+            dateOfStudyInput: '',
+            companyNameInput: '',
+            positionTitleInputer: '',
+            mainTasksInput: '',
+            cityCompanyInput: '',
         }
     }
 
     handleCallback = (name, value) =>{
         this.setState({
-            [name]: value
+            [name]: value,
         })
     }
 
@@ -26,8 +35,8 @@ class App extends React.Component{
         return (
             <div>
                 <GeneralInformation parentCallback={this.handleCallback} />
-                <EducationExperience />
-                <PracticalExperience />
+                <EducationExperience parentCallback={this.handleCallback} />
+                <PracticalExperience parentCallback={this.handleCallback} />
                 <FinalCv parentProps={this.state} />
             </div>
         )

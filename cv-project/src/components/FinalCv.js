@@ -14,17 +14,17 @@ class FinalCv extends React.Component{
                     <div className="email">{this.props.parentProps.emailInput}</div>
                 </div>
                 <div className="main">
-                    <div className="schoolName">[shoolName]: None</div>
-                    <div className="titleOfStudy">[titleOfStudy]: None</div>
-                    <div className="degree">[degree]: None</div>
-                    <div className="city">[city]: Środa Śląska</div>
-                    <div className="dateOfStudy">[dateOfStudy]: 2019</div>
+                    <div className="schoolName">[shoolName]: {this.props.parentProps.schoolNameInput}</div>
+                    <div className="titleOfStudy">[titleOfStudy]: {this.props.parentProps.titleOfStudyInput}</div>
+                    <div className="degree">[degree]: {this.props.parentProps.degreeInput}</div>
+                    <div className="city">[city]: {this.props.parentProps.cityInput}</div>
+                    <div className="dateOfStudy">[dateOfStudy]: {this.props.parentProps.dateOfStudyInput}</div>
                 </div>
                 <div className="footer">
-                    <div className="companyName">[companyName]: Coca Cola</div>
-                    <div className="positionTitle">[positionTitle]: Manager</div>
-                    <div className="mainTasks">[mainTasks]: Social media</div>
-                    <div className="city">[city]: Warszawa</div>
+                    <div className="companyName">[companyName]: {this.props.parentProps.companyNameInput}</div>
+                    <div className="positionTitle">[positionTitle]: {this.props.parentProps.positionTitleInputer}</div>
+                    <div className="mainTasks">[mainTasks]: {this.props.parentProps.mainTasksInput}</div>
+                    <div className="city">[city]: {this.props.parentProps.cityCompanyInput}</div>
                 </div>
             </div>
         )
