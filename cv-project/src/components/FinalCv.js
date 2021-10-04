@@ -1,34 +1,26 @@
-import React from 'react'
-
-class FinalCv extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
-    render() {
-        return (
-            <div className="finalCv">
-                <div className="header">
-                    <div className="firstAndFastName">{this.props.parentProps.firstNameInput} {this.props.parentProps.lastNameInput}</div>
-                    <div className="phone">[phone]: {this.props.parentProps.numberInput}</div>
-                    <div className="email">{this.props.parentProps.emailInput}</div>
-                </div>
-                <div className="main">
-                    <div className="schoolName">[shoolName]: {this.props.parentProps.schoolNameInput}</div>
-                    <div className="titleOfStudy">[titleOfStudy]: {this.props.parentProps.titleOfStudyInput}</div>
-                    <div className="degree">[degree]: {this.props.parentProps.degreeInput}</div>
-                    <div className="city">[city]: {this.props.parentProps.cityInput}</div>
-                    <div className="dateOfStudy">[dateOfStudy]: {this.props.parentProps.dateOfStudyInput}</div>
-                </div>
-                <div className="footer">
-                    <div className="companyName">[companyName]: {this.props.parentProps.companyNameInput}</div>
-                    <div className="positionTitle">[positionTitle]: {this.props.parentProps.positionTitleInputer}</div>
-                    <div className="mainTasks">[mainTasks]: {this.props.parentProps.mainTasksInput}</div>
-                    <div className="city">[city]: {this.props.parentProps.cityCompanyInput}</div>
-                </div>
+const FinalCv = (props) => {
+    return (
+        <div className="finalCv">
+            <div className="header">
+                <div className="firstAndFastName">{props.firstName} {props.lastName}</div>
+                <div className="phone">[phone]: {props.number}</div>
+                <div className="email">{props.email}</div>
             </div>
-        )
-    }
+            <div className="main">
+                <div className="schoolName">[shoolName]: {props.schoolName}</div>
+                <div className="titleOfStudy">[titleOfStudy]: {props.titleOfStudy}</div>
+                <div className="degree">[degree]: {props.degree}</div>
+                <div className="city">[city]: {props.city}</div>
+                <div className="dateOfStudy">[dateOfStudy]: {props.dateOfStudy}</div>
+            </div>
+            <div className="footer">
+                <div className="companyName">[companyName]: {props.companyName}</div>
+                <div className="positionTitle">[positionTitle]: {props.positionTitle}</div>
+                <div className="mainTasks">[mainTasks]: {props.mainTasks}</div>
+                <div className="city">[city]: {props.cityCompany}</div>
+            </div>
+        </div>
+    )
 }
 
 export default FinalCv;
